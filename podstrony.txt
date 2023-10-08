@@ -1,8 +1,10 @@
 homepage *
-wesprzyj
-projekty
-aktualnosci
-o nas(nasze dzialania, cele, historia organizacji)
-kalkulatory wplywu na srodowisko(slad weglowy, testy ekologiczne)
-FAQ
-kontakt
+wesprzyj *
+projekty *
+projekt *
+aktualnosci *
+aktualnosc *
+o nas(nasze dzialania, cele, historia organizacji) *
+porady ekologiczne *
+FAQ *
+kontakt *

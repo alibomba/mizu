@@ -1,9 +1,11 @@
-import {Outlet} from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import { Header } from '../sections';
 
 const DefaultLayout = () => {
   return (
     <>
-        <Outlet />
+      <Header />
+      <Outlet />
     </>
   )
 }

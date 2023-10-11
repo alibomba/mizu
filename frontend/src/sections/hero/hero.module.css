@@ -44,9 +44,15 @@
     background-color: var(--primary-hover);
 }
 
-@media(max-width:860px) {
+@media(max-width:900px) {
     .hero {
         padding: 5em 2em;
+    }
+}
+
+@media(max-width:810px){
+    .hero{
+        padding: 2em;
     }
 }
 
@@ -54,7 +60,6 @@
     .hero {
         align-items: center;
         text-align: center;
-        padding: 2em;
     }
 
     .hero__heading {

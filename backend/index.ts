@@ -3,6 +3,9 @@ import express, { Application } from 'express';
 import cors from 'cors';
 import path from 'path';
 dotenv.config();
+import projectRoutes from './routes/projectRoutes';
+import newsRoutes from './routes/newsRoutes';
+import newsletterRoutes from './routes/newsletterRoutes';
 
 const app: Application = express();
 
@@ -10,6 +13,9 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/storage', express.static(path.join(__dirname, 'public')));
+app.use('/api', projectRoutes);
+app.use('/api', newsRoutes);
+app.use('/api', newsletterRoutes);
 
 const PORT = process.env.SERVER_PORT || 8000;
 

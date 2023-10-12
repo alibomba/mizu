@@ -2,9 +2,13 @@
 
 import styles from './error.module.css';
 
-const Error = () => {
+interface Props {
+  children: string | null;
+}
+
+const Error = ({ children }: Props) => {
   return (
-    <p></p>
+    <p role='alert' aria-live='assertive' className={styles.error}>{children}</p>
   )
 }
 

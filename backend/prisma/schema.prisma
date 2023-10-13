@@ -39,12 +39,12 @@ model News {
 }
 
 model Fundraising {
-  id            String  @id @default(uuid())
+  id            String @id @default(uuid())
   image         String
-  title         String  @db.VarChar(45)
-  description   String  @db.Text
-  currentAmount Decimal @db.Decimal(10, 2)
-  targetAmount  Decimal @db.Decimal(10, 2)
+  title         String @db.VarChar(45)
+  description   String @db.Text
+  currentAmount Float
+  targetAmount  Float
 }
 
 model ContactMessage {

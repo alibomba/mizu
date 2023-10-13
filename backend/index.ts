@@ -7,6 +7,7 @@ import projectRoutes from './routes/projectRoutes';
 import newsRoutes from './routes/newsRoutes';
 import newsletterRoutes from './routes/newsletterRoutes';
 import fundRoutes from './routes/fundRoutes';
+import adviceRoutes from './routes/adviceRoutes';
 
 const app: Application = express();
 
@@ -18,6 +19,7 @@ app.use('/api', projectRoutes);
 app.use('/api', newsRoutes);
 app.use('/api', newsletterRoutes);
 app.use('/api', fundRoutes);
+app.use('/api', adviceRoutes);
 
 const PORT = process.env.SERVER_PORT || 8000;
 

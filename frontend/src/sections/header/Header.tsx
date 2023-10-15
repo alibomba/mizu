@@ -25,7 +25,7 @@ const Header = () => {
                     <Link onClick={() => setIsNavActive(false)} to='/'>
                         <img className={styles.header__logo} src="/img/logo.png" alt="logo organizacji" />
                     </Link>
-                    <button onClick={() => setIsNavActive(prev => !prev)} className={`${styles.header_mobile__toggle} ${isNavActive && styles.header_mobile__toggle_active}`}>
+                    <button title='Zmień widoczność menu nawigacji' onClick={() => setIsNavActive(prev => !prev)} className={`${styles.header_mobile__toggle} ${isNavActive && styles.header_mobile__toggle_active}`}>
                         <GiHamburgerMenu />
                     </button>
                 </div>

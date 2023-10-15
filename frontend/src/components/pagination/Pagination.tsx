@@ -31,11 +31,11 @@ const Pagination = ({ page, setPage, lastPage }: Props) => {
 
     return (
         <div className={styles.pagination}>
-            <button onClick={prevPage} disabled={page === 1} className={`${styles.pagination__button} ${page === 1 && styles.pagination__button_disabled}`}>
+            <button title='Poprzednia strona' onClick={prevPage} disabled={page === 1} className={`${styles.pagination__button} ${page === 1 && styles.pagination__button_disabled}`}>
                 <FaLongArrowAltLeft />
             </button>
             <p className={styles.pagination__text}>{page} z {lastPage}</p>
-            <button onClick={nextPage} disabled={page === lastPage} className={`${styles.pagination__button} ${page === lastPage && styles.pagination__button_disabled}`}>
+            <button title='Następna strona' onClick={nextPage} disabled={page === lastPage} className={`${styles.pagination__button} ${page === lastPage && styles.pagination__button_disabled}`}>
                 <FaLongArrowAltRight />
             </button>
         </div>

@@ -17,16 +17,16 @@ const Footer = () => {
                 <Link to='/kontakt' className={styles.footer__navLink}>Kontakt</Link>
             </nav>
             <div className={styles.footer__nav}>
-                <a className={styles.footer__socialLink} href="https://www.facebook.com/" target='_blank'>
+                <a title='Facebook' className={styles.footer__socialLink} href="https://www.facebook.com/" target='_blank'>
                     <BsFacebook />
                 </a>
-                <a className={styles.footer__socialLink} href="https://www.youtube.com/" target='_blank'>
+                <a title='Youtube' className={styles.footer__socialLink} href="https://www.youtube.com/" target='_blank'>
                     <BsYoutube />
                 </a>
-                <a className={styles.footer__socialLink} href="https://www.instagram.com/" target='_blank'>
+                <a title='Instagram' className={styles.footer__socialLink} href="https://www.instagram.com/" target='_blank'>
                     <BsInstagram />
                 </a>
-                <a className={styles.footer__socialLink} href="https://twitter.com/home" target='_blank'>
+                <a title='Twitter' className={styles.footer__socialLink} href="https://twitter.com/home" target='_blank'>
                     <RiTwitterXFill />
                 </a>
             </div>

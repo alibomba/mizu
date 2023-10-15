@@ -100,13 +100,13 @@ const ProjectAndNews = ({ variant }: Props) => {
                             <div className={styles.header__right}>
                                 <p className={styles.header__right__heading}>Udostępnij</p>
                                 <div className={styles.header__right__row}>
-                                    <button onClick={shareOnFacebook} className={styles.header__right__button}>
+                                    <button title='Udostępnij na Facebooku' onClick={shareOnFacebook} className={styles.header__right__button}>
                                         <BsFacebook className={styles.header__facebook} />
                                     </button>
-                                    <button onClick={shareOnTwitter} className={styles.header__right__button}>
+                                    <button title='Udostępnij na Twitterze' onClick={shareOnTwitter} className={styles.header__right__button}>
                                         <FaXTwitter className={styles.header__x} />
                                     </button>
-                                    <button onClick={copyLink} className={styles.header__right__button}>
+                                    <button title='Skopiuj link' onClick={copyLink} className={styles.header__right__button}>
                                         <FaLink className={styles.header__link} />
                                     </button>
                                 </div>

@@ -8,10 +8,13 @@ import newsRoutes from './routes/newsRoutes';
 import newsletterRoutes from './routes/newsletterRoutes';
 import fundRoutes from './routes/fundRoutes';
 import adviceRoutes from './routes/adviceRoutes';
+import contactRoutes from './routes/contactRoutes';
 
 const app: Application = express();
 
-app.use(cors());
+app.use(cors({
+    origin: process.env.FRONTEND_URL
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/storage', express.static(path.join(__dirname, 'public')));
@@ -20,6 +23,7 @@ app.use('/api', newsRoutes);
 app.use('/api', newsletterRoutes);
 app.use('/api', fundRoutes);
 app.use('/api', adviceRoutes);
+app.use('/api', contactRoutes);
 
 const PORT = process.env.SERVER_PORT || 8000;
 

@@ -1,0 +1,2 @@
+# Mizu
+Mizu is an imaginary non-profit environment help organization. It has functionalities like: supporting the specific charity collections and tracking their progress, reading news and future projects related to the organization, signing up for the newsletter, sending messages to the support center etc. The graphic design is made by me in Figma. Frontend is built in ReactJS, and backend (REST API) in NodeJS with Express framework and Prisma ORM to communicate with the PostgreSQL database.
